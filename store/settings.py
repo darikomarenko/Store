@@ -210,7 +210,7 @@ LOGOUT_REDIRECT_URL = '/'
 
 # Sending emails
 
-if not DEBUG:
+if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 else:
     EMAIL_HOST = env('EMAIL_HOST')
